@@ -7,7 +7,7 @@
 - HTML
 - SCSS
 - Flexbox
-- SVG
+- SVGs
 
 I enjoyed applying different svg image embeds through
 
