@@ -1,0 +1,121 @@
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: #e0e8ff;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+}
+main .order {
+  border-radius: 20px;
+  background-color: #fff;
+  width: 335px;
+  text-align: center;
+  padding-bottom: 10px;
+  box-shadow: 0px 10px 12px 4px rgba(143, 147, 184, 0.49);
+  display: flex;
+  flex-direction: column;
+}
+main .order .__illustration-hero {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+main .order .__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px 20px 0 20px;
+}
+main .order .__info h1 {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+main .order .__info p {
+  margin: 0;
+  padding: 0 20px;
+  color: #7280a7;
+}
+main .order .__plan-box {
+  display: flex;
+  flex-wrap: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f7ff;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 15px;
+}
+main .order .__plan-box .--plan {
+  justify-content: space-around;
+  padding-right: 40px;
+}
+main .order .__plan-box .--plan p {
+  margin: 0;
+}
+main .order .__plan-box .--plan p:first-child {
+  font-weight: 700;
+}
+main .order .__plan-box .--plan p:last-child {
+  color: #7280a7;
+}
+main .order .__plan-box .--change-link {
+  font-weight: 500;
+}
+main .order .__plan-box .--change-link:hover {
+  color: mediumslateblue;
+  text-decoration: none;
+}
+main .order button {
+  background-color: #3829e0;
+  color: #f5f7ff;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  margin: 0 20px;
+  padding: 15px;
+  box-shadow: 5px 5px 20px #7280a7;
+}
+main .order button:hover {
+  background-color: mediumslateblue;
+}
+main .order .__cancel-btn {
+  padding: 20px 0;
+  font-weight: 500;
+  color: #7280a7;
+  text-decoration: none;
+}
+main .order .__cancel-btn:hover {
+  color: #1f2f56;
+  text-decoration: none;
+}
+main a {
+  color: #3829e0;
+}
+
+footer {
+  margin: 50px 0;
+  font-size: xx-small;
+  color: #1f2f56;
+}
+footer a:hover {
+  color: #7280a7;
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

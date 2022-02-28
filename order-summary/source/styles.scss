@@ -1,0 +1,147 @@
+$mobile: 375px;
+$desktop: 1440px;
+
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+$veryPaleBlue: hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue: hsl(223, 47%, 23%);
+$hoverBlue: mediumslateblue;
+
+$paraBody: 16px;
+
+$redHatDisplay: "Red Hat Display", sans-serif;
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-color: $paleBlue;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  font-size: $paraBody;
+  font-family: $redHatDisplay;
+
+  .order {
+    border-radius: 20px;
+    background-color: #fff;
+    width: 335px;
+    text-align: center;
+    padding-bottom: 10px;
+
+    box-shadow: 0px 10px 12px 4px rgba(143, 147, 184, 0.49);
+
+    display: flex;
+    flex-direction: column;
+
+    .__illustration-hero {
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+    }
+
+    .__info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      text-align: center;
+      margin: 20px 20px 0 20px;
+      h1 {
+        font-size: 1.5em;
+        margin: 20px 0;
+      }
+      p {
+        margin: 0;
+        padding: 0 20px;
+        color: $desaturatedBlue;
+      }
+    }
+
+    .__plan-box {
+      display: flex;
+      flex-wrap: row nowrap;
+      align-items: center;
+      justify-content: space-between;
+
+      background-color: $veryPaleBlue;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 15px;
+
+      .--plan {
+        justify-content: space-around;
+        padding-right: 40px;
+        p {
+          margin: 0;
+          &:first-child {
+            font-weight: 700;
+          }
+          &:last-child {
+            color: $desaturatedBlue;
+          }
+        }
+      }
+
+      .--change-link {
+        font-weight: 500;
+        &:hover {
+          color: $hoverBlue;
+          text-decoration: none;
+        }
+      }
+    }
+
+    button {
+      background-color: $brightBlue;
+      color: $veryPaleBlue;
+      font-weight: 700;
+      border: none;
+      border-radius: 10px;
+      margin: 0 20px;
+      padding: 15px;
+      box-shadow: 5px 5px 20px $desaturatedBlue;
+      &:hover {
+        background-color: $hoverBlue;
+      }
+    }
+
+    .__cancel-btn {
+      padding: 20px 0;
+      font-weight: 500;
+      color: $desaturatedBlue;
+      text-decoration: none;
+      &:hover {
+        color: $darkBlue;
+        text-decoration: none;
+      }
+    }
+  }
+
+  a {
+    color: $brightBlue;
+  }
+}
+
+footer {
+  margin: 50px 0;
+  font-size: xx-small;
+  color: $darkBlue;
+  a:hover {
+    color: $desaturatedBlue;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
+}
