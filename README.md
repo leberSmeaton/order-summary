@@ -1,5 +1,7 @@
 ## Order summary component challenge hub
 
+[Live Site Link](https://scintillating-pudding-94402e.netlify.app/)
+
 ![screenshot with solution](./design/mobile-design.jpg)
 
 ### Built with
